@@ -110,8 +110,8 @@ public class turret extends OpMode {
         if (gamepad1.a && !lastA) selectedMode = TuningMode.P;
         if (gamepad1.b && !lastB) selectedMode = TuningMode.I;
         if (gamepad1.x && !lastX) selectedMode = TuningMode.D;
-        if (gamepad1.y && !lastY) selectedMode = TuningMode.MAX_POWER;
-        if (gamepad1.left_bumper && !lastLB) selectedMode = TuningMode.DEAD_ZONE;
+        if (gamepad1.y && !lastY) selectedMode = TuningMode.DEAD_ZONE;
+        if (gamepad1.left_bumper && !lastLB) selectedMode = TuningMode.MAX_POWER;
 
         if (gamepad1.dpad_up && !lastUp) adjustValues(step);
         if (gamepad1.dpad_down && !lastDown) adjustValues(-step);
@@ -167,3 +167,4 @@ public class turret extends OpMode {
         telemetry.update();
     }
 }
+
